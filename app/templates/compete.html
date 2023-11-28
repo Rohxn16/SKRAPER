@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+ <!-- Gonna give a grid view of all the different CP Sites here -->
+ <div class="cp-sites" id="row1">
+    <div class="site codeforces">
+        <h2>
+            <a href="/compete/codeforces">CODEFORCES  </a>
+        </h2>
+        <h1>
+            {{codeforces_contests}}
+        </h1>
+        <h3>
+            UPCOMING CONTESTS
+        </h3>
+    </div>
+    <div class="site codechef">
+        <h2>
+            <a href="/compete/codechef">CODECHEF</a>
+        </h2>
+        <h1>
+            {{codeforces_contests}}
+        </h1>
+        <h3>
+            UPCOMING CONTESTS
+        </h3>
+    </div>
+    <div class="site leetcode">
+        <h2>
+            <a href="/atcoder">ATCODER</a>
+        </h2>
+        <h1>
+            {{codeforces_contests}}
+        </h1>
+        <h3>
+            UPCOMING CONTESTS
+        </h3>
+    </div>
+ </div>
+
+ <div class="cp-sites" id="row2">
+    <div class="site codeforces">
+        <h2>
+            <a href="/codeforces">CODEFORCES</a>
+        </h2>
+        <h1>
+            {{codeforces_contests}}
+        </h1>
+        <h3>
+            UPCOMING CONTESTS
+        </h3>
+    </div>
+    <div class="site codechef">
+        <h2>
+            <a href="/codeforces">CODEFORCES</a>
+        </h2>
+        <h1>
+            {{codeforces_contests}}
+        </h1>
+        <h3>
+            UPCOMING CONTESTS
+        </h3>
+    </div>
+    <div class="site leetcode">
+        <h2>
+            <a href="/codeforces">CODEFORCES</a>
+        </h2>
+        <h1>
+            {{codeforces_contests}}
+        </h1>
+        <h3>
+            UPCOMING CONTESTS
+        </h3>
+    </div>
+ </div>
+
+{% endblock %}

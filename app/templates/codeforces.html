@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="competitions" >
+    <div class="codeforces ">
+        <h1 class="contest-header">
+             <u>UPCOMING CONTESTS ON CODEFORCES:</u>
+        </h1>
+            {% for contest in contestlist %}
+            
+            <div class="contest-container">
+                <div class="contest-name">
+                    <h2>
+                        {{contest[1]}}
+                    </h2>
+                    <h3>
+                        Starting Time : {{contest[2]}}
+                    </h3>
+                    <h3>
+                        Duration : {{contest[3]}}
+                    </h3>
+                    <button>
+                        <a href="https://codeforces.com/contestRegistration/{{contest[0]}}" target="_blank">Register</a>
+                    </button>
+                </div>
+            </div>
+
+            {% endfor %}
+</div>
+
+{% endblock %}
